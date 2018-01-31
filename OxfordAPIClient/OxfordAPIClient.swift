@@ -37,21 +37,7 @@ class OxfordAPIClient: OxfordDictionaryAPIDelegate{
    
 
 
-    
-    /** Note: Refactor method to include a parameter for the translation parameters **/
-    func getWordListJSONData(forSourceLanguage sourceLanguage: OxfordAPILanguage, forDomainFilters domainFilters: [OxfordDomain], forRegionFilters regionFilters: [OxfordRegion], forRegisterFilters registerFilters: [OxfordLanguageRegister], forLexicalCategoryFilters lexicalCategoryFilters: [OxfordLexicalCategory]){
-        
-        let apiRequest = OxfordWordlistAPIRequest(forSourceLanguage: sourceLanguage, forDomainFilters: domainFilters, forRegionFilters: regionFilters, forRegisterFilters: registerFilters, forLexicalCategoryFilters: lexicalCategoryFilters)
-        
-        let urlString = apiRequest.getURLString()
-        
-        print("The url string generated from this apiRequest is: \(urlString)")
-        
-        let urlRequest = apiRequest.generateURLRequest()
-        
-        self.startDataTask(withURLRequest: urlRequest)
-    }
-    
+
     func downloadDictionaryEntryJSONData(forWord queryWord: String, andForLanguage language:OxfordAPILanguage){
         
         if let apiRequest = OxfordAPIRequest(withQueryWord: queryWord, forRegions: nil, forLanguage: language, withFilterForDictionaryEntryLookup: nil, withQueryFilters: nil){
