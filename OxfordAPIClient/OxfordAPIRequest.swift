@@ -15,8 +15,8 @@ class OxfordAPIRequest{
     //Static constants
     
      static let baseURLString = "https://od-api.oxforddictionaries.com/api/v1/"
-     private static let appID = "acb61904"
-     private static let appKey = "383d6f9739d4974fb81168976b6e991b"
+     private static let appID = "abkdfe"
+     private static let appKey = "32343adfad6f9739d4974ere81168976b6e991b"
     
     
     //Computed Properties
