@@ -22,6 +22,47 @@ class OxfordAPIClient: OxfordDictionaryAPIDelegate{
         delegate = self
     }
     
+    enum DictionaryLookupFilter{
+        case examples
+        case pronunciations
+        case definitions
+        case etymologies
+        case variantForms
+        case registers
+        case regions
+        case domains
+        case grammaticalFeatures
+        case lexicalCategory
+    
+        func getOxfordAPIFiler() -> OxfordAPIEndpoint.OxfordAPIFilter{
+            
+            switch self {
+            case .examples:
+                return OxfordAPIEndpoint.OxfordAPIFilter.examples([])
+            case .pronunciations:
+                return OxfordAPIEndpoint.OxfordAPIFilter.pronunciations([])
+            case .definitions:
+                return OxfordAPIEndpoint.OxfordAPIFilter.definitions([])
+            case .etymologies:
+                return OxfordAPIEndpoint.OxfordAPIFilter.etymologies([])
+            case .variantForms:
+                return OxfordAPIEndpoint.OxfordAPIFilter.variantForms([])
+            case .registers:
+                return OxfordAPIEndpoint.OxfordAPIFilter.registers([])
+            case .regions:
+                return OxfordAPIEndpoint.OxfordAPIFilter.regions([])
+            case .domains:
+                return OxfordAPIEndpoint.OxfordAPIFilter.domains([])
+            case .grammaticalFeatures:
+                return OxfordAPIEndpoint.OxfordAPIFilter.grammaticalFeatures([])
+            case .lexicalCategory:
+                return OxfordAPIEndpoint.OxfordAPIFilter.lexicalCategory([])
+       
+            }
+        }
+        
+    }
+    
     func setOxfordDictionaryAPIClientDelegate(with apiDelegate: OxfordDictionaryAPIDelegate){
         
         self.delegate = apiDelegate
@@ -58,7 +99,16 @@ class OxfordAPIClient: OxfordDictionaryAPIDelegate{
        
     }
     
-    func downloadDictionaryEntryJSONData(forWord word: String, andForEntryFilter entryFilter: OxfordAPIEndpoint.OxfordAPIFilter){
+     func downloadFilteredDictionaryEntryJSONData(forWord word: String, andForEntryFilter entryFilter: DictionaryLookupFilter){
+        
+        let apiFilter = entryFilter.getOxfordAPIFiler()
+        
+        downloadDictionaryEntryJSONData(forWord: word, andForEntryFilter: apiFilter)
+    }
+
+    
+    
+    private func downloadDictionaryEntryJSONData(forWord word: String, andForEntryFilter entryFilter: OxfordAPIEndpoint.OxfordAPIFilter){
         
         if let apiRequest = OxfordAPIRequest(withWord: word, withDictionaryEntryFilter: entryFilter){
             
