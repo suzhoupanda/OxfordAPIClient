@@ -14,6 +14,16 @@
 		BDA9DF342021CFD300F5FCBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA9DF322021CFD300F5FCBF /* LaunchScreen.storyboard */; };
 		BDA9DF3F2021CFD300F5FCBF /* OxfordAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF3E2021CFD300F5FCBF /* OxfordAPIClientTests.swift */; };
 		BDA9DF4A2021CFD300F5FCBF /* OxfordAPIClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF492021CFD300F5FCBF /* OxfordAPIClientUITests.swift */; };
+		BDA9DF582021D00700F5FCBF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF572021D00700F5FCBF /* Models.swift */; };
+		BDA9DF5A2021D8D500F5FCBF /* OxfordAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF592021D8D500F5FCBF /* OxfordAPIRequest.swift */; };
+		BDA9DF5C2021DEAD00F5FCBF /* OxfordAPIRequestURLStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF5B2021DEAD00F5FCBF /* OxfordAPIRequestURLStringTests.swift */; };
+		BDA9DF5E2021E0AB00F5FCBF /* OxfordThesaurusAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF5D2021E0AA00F5FCBF /* OxfordThesaurusAPIRequest.swift */; };
+		BDA9DF602021E43E00F5FCBF /* OxfordSentencesAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF5F2021E43D00F5FCBF /* OxfordSentencesAPIRequest.swift */; };
+		BDA9DF622021E58A00F5FCBF /* OxfordWordlistAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF612021E58A00F5FCBF /* OxfordWordlistAPIRequest.swift */; };
+		BDA9DF642021E81800F5FCBF /* OxfordUtilityAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF632021E81800F5FCBF /* OxfordUtilityAPIRequest.swift */; };
+		BDA9DF662021EA0F00F5FCBF /* OxfordAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF652021EA0F00F5FCBF /* OxfordAPIClient.swift */; };
+		BDA9DF682021EA2100F5FCBF /* OxfordDictionaryAPIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF672021EA2100F5FCBF /* OxfordDictionaryAPIDelegate.swift */; };
+		BDA9DF6A2021EA8000F5FCBF /* OxfordLemmatronAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9DF692021EA8000F5FCBF /* OxfordLemmatronAPIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		BDA9DF452021CFD300F5FCBF /* OxfordAPIClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OxfordAPIClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA9DF492021CFD300F5FCBF /* OxfordAPIClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordAPIClientUITests.swift; sourceTree = "<group>"; };
 		BDA9DF4B2021CFD300F5FCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA9DF572021D00700F5FCBF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BDA9DF592021D8D500F5FCBF /* OxfordAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordAPIRequest.swift; sourceTree = "<group>"; };
+		BDA9DF5B2021DEAD00F5FCBF /* OxfordAPIRequestURLStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordAPIRequestURLStringTests.swift; sourceTree = "<group>"; };
+		BDA9DF5D2021E0AA00F5FCBF /* OxfordThesaurusAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordThesaurusAPIRequest.swift; sourceTree = "<group>"; };
+		BDA9DF5F2021E43D00F5FCBF /* OxfordSentencesAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordSentencesAPIRequest.swift; sourceTree = "<group>"; };
+		BDA9DF612021E58A00F5FCBF /* OxfordWordlistAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordWordlistAPIRequest.swift; sourceTree = "<group>"; };
+		BDA9DF632021E81800F5FCBF /* OxfordUtilityAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordUtilityAPIRequest.swift; sourceTree = "<group>"; };
+		BDA9DF652021EA0F00F5FCBF /* OxfordAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordAPIClient.swift; sourceTree = "<group>"; };
+		BDA9DF672021EA2100F5FCBF /* OxfordDictionaryAPIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryAPIDelegate.swift; sourceTree = "<group>"; };
+		BDA9DF692021EA8000F5FCBF /* OxfordLemmatronAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordLemmatronAPIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +117,16 @@
 		BDA9DF282021CFD300F5FCBF /* OxfordAPIClient */ = {
 			isa = PBXGroup;
 			children = (
+				BDA9DF652021EA0F00F5FCBF /* OxfordAPIClient.swift */,
+				BDA9DF692021EA8000F5FCBF /* OxfordLemmatronAPIRequest.swift */,
+				BDA9DF672021EA2100F5FCBF /* OxfordDictionaryAPIDelegate.swift */,
+				BDA9DF632021E81800F5FCBF /* OxfordUtilityAPIRequest.swift */,
+				BDA9DF612021E58A00F5FCBF /* OxfordWordlistAPIRequest.swift */,
+				BDA9DF592021D8D500F5FCBF /* OxfordAPIRequest.swift */,
+				BDA9DF5F2021E43D00F5FCBF /* OxfordSentencesAPIRequest.swift */,
+				BDA9DF5D2021E0AA00F5FCBF /* OxfordThesaurusAPIRequest.swift */,
 				BDA9DF292021CFD300F5FCBF /* AppDelegate.swift */,
+				BDA9DF572021D00700F5FCBF /* Models.swift */,
 				BDA9DF2B2021CFD300F5FCBF /* ViewController.swift */,
 				BDA9DF2D2021CFD300F5FCBF /* Main.storyboard */,
 				BDA9DF302021CFD300F5FCBF /* Assets.xcassets */,
@@ -110,6 +139,7 @@
 		BDA9DF3D2021CFD300F5FCBF /* OxfordAPIClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				BDA9DF5B2021DEAD00F5FCBF /* OxfordAPIRequestURLStringTests.swift */,
 				BDA9DF3E2021CFD300F5FCBF /* OxfordAPIClientTests.swift */,
 				BDA9DF402021CFD300F5FCBF /* Info.plist */,
 			);
@@ -259,8 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDA9DF5E2021E0AB00F5FCBF /* OxfordThesaurusAPIRequest.swift in Sources */,
+				BDA9DF642021E81800F5FCBF /* OxfordUtilityAPIRequest.swift in Sources */,
+				BDA9DF582021D00700F5FCBF /* Models.swift in Sources */,
 				BDA9DF2C2021CFD300F5FCBF /* ViewController.swift in Sources */,
+				BDA9DF602021E43E00F5FCBF /* OxfordSentencesAPIRequest.swift in Sources */,
+				BDA9DF662021EA0F00F5FCBF /* OxfordAPIClient.swift in Sources */,
+				BDA9DF5A2021D8D500F5FCBF /* OxfordAPIRequest.swift in Sources */,
 				BDA9DF2A2021CFD300F5FCBF /* AppDelegate.swift in Sources */,
+				BDA9DF622021E58A00F5FCBF /* OxfordWordlistAPIRequest.swift in Sources */,
+				BDA9DF6A2021EA8000F5FCBF /* OxfordLemmatronAPIRequest.swift in Sources */,
+				BDA9DF682021EA2100F5FCBF /* OxfordDictionaryAPIDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDA9DF3F2021CFD300F5FCBF /* OxfordAPIClientTests.swift in Sources */,
+				BDA9DF5C2021DEAD00F5FCBF /* OxfordAPIRequestURLStringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
