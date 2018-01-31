@@ -79,6 +79,21 @@ class OxfordAPIRequestURLStringTests: XCTestCase {
         
     }
     
+    func testOxfordAPIRequestURLStringWithoutDictionaryLookupFilters(){
+        
+        let apiRequest1 = OxfordAPIRequest(withQueryWord: "love", forRegions: nil, forLanguage: .English, withFilterForDictionaryEntryLookup: nil, withQueryFilters: nil)
+        
+        
+        XCTAssertNotNil(apiRequest1)
+        
+        if let nonNilRequest1 = apiRequest1{
+            
+            let urlString1 = nonNilRequest1.getURLString()
+            
+            XCTAssertEqual(urlString1, "https://od-api.oxforddictionaries.com/api/v1/entries/en/love")
+        }
+
+    }
     
     func testOxfordAPIRequestURLStringWithDictionaryLookupFilters(){
         

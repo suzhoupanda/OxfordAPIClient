@@ -215,6 +215,9 @@ class OxfordAPIRequest{
             nextURLStr = nextURLStr.appending(regionStr)
             
             return nextURLStr
+        } else {
+            
+            nextURLStr.removeLast()
         }
         
     
